@@ -4,6 +4,24 @@
     ViewData["Title"] = "Home page";
 }
 
+@section Scripts {
+    <script src="~/js/index.js"></script>
+}
+
+<link rel="stylesheet" href="~/css/chat.css" />
+
+<div id="chatDialog" title="Chat with support">
+    <div id="chatMainPanel">
+        <ul id="chatHistory"></ul>
+        <div id="bottomPanel">
+            <form id="chatForm">
+                <input id="messageTextbox" type="text" placeholder="Type a message" />
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
